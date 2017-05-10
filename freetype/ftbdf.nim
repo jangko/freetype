@@ -24,7 +24,7 @@ type
     typ*: BDF_PropertyType
     u*: INNER_C_UNION_3982941592
 
-proc FT_Get_BDF_Charset_ID*(face: FT_Face; acharset_encoding: ptr ptr cchar;
-                           acharset_registry: ptr ptr cchar): FT_Error {.ftimport.}
-proc FT_Get_BDF_Property*(face: FT_Face; prop_name: ptr cchar;
-                         aproperty: ptr BDF_PropertyRec): FT_Error {.ftimport.}
+proc FT_Get_BDF_Charset_ID*(face: FT_Face; acharset_encoding: ptr cstring;
+                           acharset_registry: ptr cstring): FT_Error {.ftimport.}
+proc FT_Get_BDF_Property*(face: FT_Face; prop_name: cstring;
+                         aproperty: var BDF_PropertyRec): FT_Error {.ftimport.}
