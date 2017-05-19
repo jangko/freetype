@@ -1,6 +1,6 @@
 [Package]
-name          = "FreeType"
-version       = "0.1.0"
+name          = "freetype"
+version       = "0.1.1"
 author        = "Andri Lim"
 description   = "FreeType2 library wrapper"
 license       = "MIT"
