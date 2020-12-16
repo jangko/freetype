@@ -6,7 +6,7 @@
 #-----------------------------------------
 
 when defined(MACOSX):
-  const FT_LIB_NAME* = "libfreetype-6.dylib"
+  const FT_LIB_NAME* = "libfreetype(-6|.6|).dylib"
 elif defined(UNIX):
   const FT_LIB_NAME* = "libfreetype.so.6"
 else:
