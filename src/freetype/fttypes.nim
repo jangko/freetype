@@ -30,7 +30,7 @@ type
   FT_Fixed* = clong
   FT_Error* = cint
   FT_Pointer* = pointer
-  FT_Offset* = csize
+  FT_Offset* = csize_t
 
   #ft_ptrdiff_t  FT_PtrDist;
 
