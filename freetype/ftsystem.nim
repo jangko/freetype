@@ -25,7 +25,7 @@ type
 
   FT_Stream* = ptr FT_StreamRec
 
-  FT_StreamDesc* = object {.union.}
+  FT_StreamDesc* {.union.} = object
     value*: clong
     pointer*: pointer
 
