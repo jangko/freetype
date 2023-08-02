@@ -5,7 +5,7 @@
 #
 #-----------------------------------------
 
-import fttypes, freetype, ftimage, ftglyph
+import fttypes, freetype, ftglyph
 include ftimport
 
 type

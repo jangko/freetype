@@ -9,7 +9,7 @@ import fttypes, freetype
 include ftimport
 
 type
-  INNER_C_UNION_3982941592* = object {.union.}
+  INNER_C_UNION_3982941592* {.union.} = object
     atom*: ptr cchar
     integer*: FT_Int32
     cardinal*: FT_UInt32

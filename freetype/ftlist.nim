@@ -5,7 +5,7 @@
 #
 #-----------------------------------------
 
-import fttypes, freetype, ftsystem
+import fttypes, ftsystem
 include ftimport
 
 proc FT_List_Find*(list: FT_List; data: pointer): FT_ListNode {.ftimport.}

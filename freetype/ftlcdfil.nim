@@ -5,7 +5,7 @@
 #
 #-----------------------------------------
 
-import fttypes, freetype, ftsystem
+import fttypes, freetype
 include ftimport
 
 type
@@ -16,4 +16,4 @@ type
 
 proc FT_Library_SetLcdFilter*(library: FT_Library; filter: FT_LcdFilter): FT_Error {.ftimport.}
 
-proc FT_Library_SetLcdFilterWeights*(library: FT_Library; weights: ptr cuchar): FT_Error {.ftimport.}
+proc FT_Library_SetLcdFilterWeights*(library: FT_Library; weights: ptr uint8): FT_Error {.ftimport.}

@@ -11,11 +11,11 @@ type
   FT_Uint8* = uint8
   FT_Uint32* = uint32
   FT_Int32* = int32
-  FT_Bool* = cuchar
+  FT_Bool* = uint8
   FT_FWord* = cshort
   FT_UFWord* = cushort
   FT_Char* = cchar
-  FT_Byte* = cuchar
+  FT_Byte* = uint8
   FT_Bytes* = ptr FT_Byte
   FT_Tag* = FT_UInt32
   FT_String* = cchar
@@ -30,7 +30,7 @@ type
   FT_Fixed* = clong
   FT_Error* = cint
   FT_Pointer* = pointer
-  FT_Offset* = csize
+  FT_Offset* = csize_t
 
   #ft_ptrdiff_t  FT_PtrDist;
 

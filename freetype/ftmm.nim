@@ -5,7 +5,7 @@
 #
 #-----------------------------------------
 
-import fttypes, ftimage, freetype, t1tables
+import fttypes, freetype, t1tables
 include ftimport
 
 type

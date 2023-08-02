@@ -5,7 +5,7 @@
 #
 #-----------------------------------------
 
-import fttypes, freetype, ftsystem
+import fttypes, freetype
 include ftimport
 
 const

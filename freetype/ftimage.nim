@@ -51,8 +51,8 @@ type
     pitch*: cint
     buffer*: cstring
     num_grays*: cushort
-    pixel_mode*: cuchar
-    palette_mode*: cuchar
+    pixel_mode*: uint8
+    palette_mode*: uint8
     palette*: pointer
 
   FT_Outline* = object
@@ -122,7 +122,7 @@ type
   FT_Span* = object
     x*: cshort
     len*: cushort
-    coverage*: cuchar
+    coverage*: uint8
 
   FT_SpanFunc*            = proc(y, count: cint; spans: var FT_Span; user: pointer) {.ftcallback.}
   FT_Raster_Span_Func*    = FT_SpanFunc
