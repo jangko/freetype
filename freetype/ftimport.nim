@@ -12,5 +12,14 @@ elif defined(UNIX):
 else:
   const FT_LIB_NAME* = "libfreetype-6.dll"
 
-{.pragma: ftimport, cdecl, importc, dynlib: FT_LIB_NAME.}
+when defined(freetypeStatic):
+  when defined(vcc):
+    {.link: "freetype.lib".}
+  else:
+    {.passL: "-lfreetype".}
+  
+  {.pragma: ftimport, cdecl, importc.}
+else:
+  {.pragma: ftimport, cdecl, importc, dynlib: FT_LIB_NAME.}
+
 {.pragma: ftcallback, cdecl.}
