@@ -12,7 +12,10 @@ elif defined(UNIX):
 else:
   const FT_LIB_NAME* = "libfreetype-6.dll"
 
-when defined(freetypeStatic):
+when defined(emscripten):
+  {.passL: "-sUSE_FREETYPE=1".}
+  {.pragma: ftimport, cdecl, importc.}
+elif defined(freetypeStatic):
   when defined(vcc):
     {.link: "freetype.lib".}
   else:
